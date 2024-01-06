@@ -43,6 +43,9 @@ env/
 venv/
 ENV/
 
+# requests cache
+.cache.sqlite
+
 # mypy
 .mypy_cache/
 .dmypy.json

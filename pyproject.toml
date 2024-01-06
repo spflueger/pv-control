@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.2.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pv_control"
+version = "0.1.0"
+requires-python = ">=3.8"
+readme = "README.rst"
+dependencies = [
+"attrs",
+"numpy",
+"openmeteo_requests",
+"requests-cache",
+"retry-requests",
+"numpy",
+"pandas",
+"pytz",
+"tzdata",
+"suncalc"
+]
+authors = [
+  {name = "Stefan Pflueger", email = "spfluege@gmail.com"},
+]
+maintainers = [
+  {name = "Stefan Pflueger", email = "spfluege@gmail.com"},
+]
+description = "Customizeable photovoltaic control system for your home incl weather forecasts!"
+keywords = []
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies] # Optional
+dev = ["typing_extensions"]
+test = ["pytest"]
